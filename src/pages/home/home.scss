@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    div {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        label {
+            display: flex;
+
+            input {
+                background-color: #f2f2f2;
+                min-width: 350px;
+                border: none;
+                height: 40px;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                text-transform: uppercase;
+                font-weight: bold;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                background-color: #f2f2f2;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                margin: 10px;
+                max-width: 350px;
+                min-width: 350px;
+                animation-name: li;
+                animation-duration: 1s;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                p,
+                a {
+                    color: gray;
+                }
+
+                .titulo {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: rgb(90, 90, 224);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            @keyframes li {
+                0% {
+                    opacity: 0;
+                    transform: translateY(50%);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+            }
+        }
+    }
+}
