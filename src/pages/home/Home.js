@@ -42,7 +42,7 @@ function Home() {
                 <li key={anime.animeId}>
                   <img src={anime.animeImg} alt={anime.animeTitle} />
                   <p className="titulo">{anime.animeTitle}</p>
-                  <a href={anime.animeUrl}>{anime.animeUrl.substring(0, 35)}</a>
+                  <a href={anime.animeUrl}>{anime.animeUrl.substring(0, 20)}</a>
                   <p>{anime.status}</p>
                 </li>
               );
