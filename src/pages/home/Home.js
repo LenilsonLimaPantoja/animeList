@@ -28,7 +28,7 @@ function Home() {
         <label>
           <input
             placeholder="Pesquise seu anime favorito"
-            type="text"
+            type="search"
             onChange={(e) => setFiltro(e.target.value)}
             value={filtro}
           />
